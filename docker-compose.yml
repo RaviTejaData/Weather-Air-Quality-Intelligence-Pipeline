@@ -1,0 +1,20 @@
+# Single-container Airflow "standalone" setup -- enough to see the DAG run
+# end-to-end locally. For a production deployment, use Airflow's official
+# multi-container docker-compose (separate webserver/scheduler/Postgres)
+# instead; this is intentionally simplified for a fast, one-command demo.
+services:
+  airflow:
+    build: .
+    container_name: weather_pipeline_airflow
+    command: standalone
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./config:/opt/airflow/config
+      - ./data:/opt/airflow/data
+    working_dir: /opt/airflow

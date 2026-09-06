@@ -1,0 +1,7 @@
+# Full pipeline (Spark + Airflow) -- used inside the Docker image.
+pyspark==3.5.1
+delta-spark==3.2.0
+apache-airflow==2.9.3
+requests==2.32.3
+PyYAML==6.0.1
+pandas==2.2.2

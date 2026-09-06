@@ -1,0 +1,27 @@
+{
+  "city": "Tokyo",
+  "country": "JP",
+  "latitude": 35.6762,
+  "longitude": 139.6503,
+  "ingested_at": "2026-01-01T12:00:00+00:00",
+  "source": {
+    "weather_url": "https://api.open-meteo.com/v1/forecast",
+    "air_quality_url": "https://air-quality-api.open-meteo.com/v1/air-quality"
+  },
+  "weather_raw": {
+    "current": {
+      "temperature_2m": 6.8,
+      "relative_humidity_2m": 45.0,
+      "wind_speed_10m": 9.1,
+      "precipitation": 0.0,
+      "weather_code": 1
+    }
+  },
+  "air_quality_raw": {
+    "current": {
+      "pm2_5": 15.6,
+      "pm10": 22.0,
+      "us_aqi": 62.0
+    }
+  }
+}

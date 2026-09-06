@@ -1,0 +1,35 @@
+# Cities tracked by the pipeline.
+# Add or remove entries freely -- the pipeline is fully data-driven off this file.
+cities:
+  - name: London
+    country: GB
+    latitude: 51.5074
+    longitude: -0.1278
+  - name: New York
+    country: US
+    latitude: 40.7128
+    longitude: -74.0060
+  - name: Tokyo
+    country: JP
+    latitude: 35.6762
+    longitude: 139.6503
+  - name: Sydney
+    country: AU
+    latitude: -33.8688
+    longitude: 151.2093
+  - name: Mumbai
+    country: IN
+    latitude: 19.0760
+    longitude: 72.8777
+  - name: Cape Town
+    country: ZA
+    latitude: -33.9249
+    longitude: 18.4241
+  - name: Sao Paulo
+    country: BR
+    latitude: -23.5505
+    longitude: -46.6333
+  - name: Toronto
+    country: CA
+    latitude: 43.6511
+    longitude: -79.3470

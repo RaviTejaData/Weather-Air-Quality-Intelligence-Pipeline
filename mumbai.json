@@ -1,0 +1,27 @@
+{
+  "city": "Mumbai",
+  "country": "IN",
+  "latitude": 19.0760,
+  "longitude": 72.8777,
+  "ingested_at": "2026-01-01T12:00:00+00:00",
+  "source": {
+    "weather_url": "https://api.open-meteo.com/v1/forecast",
+    "air_quality_url": "https://air-quality-api.open-meteo.com/v1/air-quality"
+  },
+  "weather_raw": {
+    "current": {
+      "temperature_2m": 29.5,
+      "relative_humidity_2m": 68.0,
+      "wind_speed_10m": 11.4,
+      "precipitation": 0.0,
+      "weather_code": 0
+    }
+  },
+  "air_quality_raw": {
+    "current": {
+      "pm2_5": 68.2,
+      "pm10": 95.0,
+      "us_aqi": 158.0
+    }
+  }
+}

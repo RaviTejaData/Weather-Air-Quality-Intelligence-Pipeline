@@ -1,0 +1,27 @@
+{
+  "city": "London",
+  "country": "GB",
+  "latitude": 51.5074,
+  "longitude": -0.1278,
+  "ingested_at": "2026-01-01T12:00:00+00:00",
+  "source": {
+    "weather_url": "https://api.open-meteo.com/v1/forecast",
+    "air_quality_url": "https://air-quality-api.open-meteo.com/v1/air-quality"
+  },
+  "weather_raw": {
+    "current": {
+      "temperature_2m": 9.4,
+      "relative_humidity_2m": 78.0,
+      "wind_speed_10m": 14.2,
+      "precipitation": 0.2,
+      "weather_code": 61
+    }
+  },
+  "air_quality_raw": {
+    "current": {
+      "pm2_5": 8.1,
+      "pm10": 12.4,
+      "us_aqi": 34.0
+    }
+  }
+}

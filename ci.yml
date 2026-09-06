@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install lightweight dependencies
+        run: pip install -r requirements-demo.txt
+
+      - name: Lint (flake8)
+        run: flake8 src tests scripts --max-line-length=120
+
+      - name: Check formatting (black)
+        run: black --check src tests scripts
+
+      - name: Run unit tests
+        run: pytest tests/ -v
+
+      - name: Run local demo (offline fixtures)
+        run: python scripts/run_local_demo.py --offline
